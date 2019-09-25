@@ -30,7 +30,6 @@ class ContactoController extends Controller
        public function estadisticas()
     {
 
-
         return view('estadisticas');
     }
 
