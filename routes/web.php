@@ -52,3 +52,4 @@ Route::post('/contacto/guardado-form','ContactoController@create')->name('guarda
 Route::get('/estadisticas', 'ContactoController@estadisticas')->name('estadisticas');
 
 
+Route::get('/noticias', 'NoticiasController@index')->name('noticias');
