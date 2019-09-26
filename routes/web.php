@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
+//prueba
 
 Route::get('/usuarios', 'usercontroller@index')->name('usuarios');
 
