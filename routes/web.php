@@ -19,7 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//prueba contyrolador noticias
+
+
 
 Route::get('/usuarios', 'usercontroller@index')->name('usuarios');
 
