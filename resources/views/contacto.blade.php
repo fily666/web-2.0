@@ -46,10 +46,8 @@
                                                 <div class="btn-group dropdown">
                                                     <button class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">Acción <span class="caret"></span></button>
                                                     <ul class="dropdown-menu context pull-right">
-                                                        <li><a href="/situr/fontur_nts_admin_2015/users/edit/1">Editar</a></li>
-                                                        <li>
-                                                            <form name="post_5c54bf44b39c5634813202" style="display:none;" method="post" action="/situr/fontur_nts_admin_2015/users/delete/1"><input type="hidden" name="_method" value="POST" /></form><a href="#" onclick="if (confirm(&quot;\u00bfEst\u00e1 seguro?&quot;)) { document.post_5c54bf44b39c5634813202.submit(); } event.returnValue = false; return false;">Eliminar</a>
-                                                        </li>
+                                                        <li><a href="">Editar</a></li>
+                                                        <li><a href="">Eliminar</a></li>
                                                     </ul>
                                                 </div>
                                             </td>

@@ -28,7 +28,7 @@ Route::get('/usuarios/crear-usuario', function () {
     return view('crear_user');
 })->name('crear_user');
 
-Route::post('/usuarios/crear-usuario/guardado','usercontroller@create')->name('guardar'); 
+Route::post('/usuarios/crear-usuario/guardado', 'usercontroller@create')->name('guardar');
 
 
 
@@ -41,7 +41,7 @@ Route::get('/contacto/crear_contacto', function () {
     return view('crear_contacto');
 })->name('crear_contacto');
 
-Route::post('/contacto/guardado-form','ContactoController@create')->name('guardar_form'); 
+Route::post('/contacto/guardado-form', 'ContactoController@create')->name('guardar_form');
 
 
 
@@ -54,10 +54,13 @@ Route::get('/estadisticas', 'ContactoController@estadisticas')->name('estadistic
 
 
 Route::get('/noticias', 'NoticiasController@index')->name('noticias');
-Route::post('/noticias', 'NoticiasController@create')->name('prueba23');
+
+Route::get('/noticias/noticias_create', function () {
+    return view('noticias_crear');
+})->name('noticias_create');
+
+Route::post('/noticias/guardado-form', 'NoticiasController@create')->name('prueba23');
 
 
 
 Route::get('/localizacion', 'LocalizacionController@index')->name('localización');
-
-

@@ -14,7 +14,9 @@ class NoticiasController extends Controller
      */
     public function index()
     {
-        return view('noticias');
+        $noticias = noticias::all();
+        
+        return view('noticias')->with('noticias', $noticias);
     }
 
     /**
