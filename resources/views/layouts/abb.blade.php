@@ -231,7 +231,7 @@
                 <li><a href="{{ url('/estadisticas') }}">Estadisticas<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a href="{{ url('/usuarios') }}">Usuarios<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
                 <li><a href="{{ url('/noticias') }}">Noticias<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
-                <li><a>Relatorio<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
+                <li><a href="{{ url('/localizacion') }}">localizacion<span class="sub_icon glyphicon glyphicon-link"></span></a></li>
 
             </ul>
 

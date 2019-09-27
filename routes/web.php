@@ -56,3 +56,8 @@ Route::get('/estadisticas', 'ContactoController@estadisticas')->name('estadistic
 Route::get('/noticias', 'NoticiasController@index')->name('noticias');
 Route::post('/noticias', 'NoticiasController@create')->name('prueba23');
 
+
+
+Route::get('/localizacion', 'LocalizacionController@index')->name('localización');
+
+
