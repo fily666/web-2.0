@@ -22,9 +22,13 @@ class NoticiasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        noticias::create($request->all());
+
+
+        return redirect()->route('noticias')->with('info','noticia creada');
+
     }
 
     /**
