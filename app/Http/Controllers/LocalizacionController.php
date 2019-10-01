@@ -14,7 +14,7 @@ class LocalizacionController extends Controller
      */
     public function index()
     {
-        return view('localizacion');
+        return view('localizacions');
     }
 
     /**
@@ -22,9 +22,10 @@ class LocalizacionController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        localizacion::create($request->all());
+        return redirect()->route('localizacions')->with('info','localizacion-creada');
     }
 
     /**

@@ -15,7 +15,7 @@ class NoticiasController extends Controller
     public function index()
     {
         $noticias = noticias::all();
-        
+
         return view('noticias')->with('noticias', $noticias);
     }
 
@@ -29,8 +29,7 @@ class NoticiasController extends Controller
         noticias::create($request->all());
 
 
-        return redirect()->route('noticias')->with('info','noticia creada');
-
+        return redirect()->route('noticias')->with('info', 'noticia creada');
     }
 
     /**

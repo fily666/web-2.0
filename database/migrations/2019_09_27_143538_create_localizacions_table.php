@@ -13,8 +13,16 @@ class CreateLocalizacionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('localizacions', function (Blueprint $table) {
+        Schema::create('localizacion', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('titulo');
+            $table->string('direccion');
+            $table->string('telefono');
+            $table->string('correo');
+            $table->string('encargado');
+            $table->string('cargo');
+            $table->string('latitud');
+            $table->string('longitud');
             $table->timestamps();
         });
     }
@@ -26,6 +34,6 @@ class CreateLocalizacionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('localizacions');
+        Schema::dropIfExists('localizacion');
     }
 }

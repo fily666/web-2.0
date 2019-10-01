@@ -53,6 +53,9 @@ Route::get('/estadisticas', 'ContactoController@estadisticas')->name('estadistic
 
 
 
+
+
+
 Route::get('/noticias', 'NoticiasController@index')->name('noticias');
 
 Route::get('/noticias/noticias_create', function () {
@@ -64,3 +67,5 @@ Route::post('/noticias/guardado-form', 'NoticiasController@create')->name('prueb
 
 
 Route::get('/localizacion', 'LocalizacionController@index')->name('localización');
+
+Route::post('/localizacion', 'LocalizacionController@create')->name('guardado-localizacion');
