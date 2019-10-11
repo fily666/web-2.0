@@ -23,7 +23,6 @@ class usercontroller extends Controller
 
 
 
-
      public function index()
     {
         $user = User::all();
