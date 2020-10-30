@@ -209,7 +209,6 @@
 
             #wrapper.active #sidebar-wrapper {
                 left: 70px;
-                width: ;
                 transition: all .4s ease 0s;
             }
         }
